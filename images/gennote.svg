@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">GenNote placeholder</title>
+  <desc id="desc">Retro black and white placeholder image for GenNote.</desc>
+  <rect width="400" height="260" fill="#f7f7f7"/>
+  <rect x="18" y="18" width="364" height="224" fill="none" stroke="#111" stroke-width="4"/>
+  <rect x="62" y="52" width="126" height="160" fill="none" stroke="#111" stroke-width="5"/>
+  <line x1="82" y1="86" x2="166" y2="86" stroke="#111" stroke-width="4"/>
+  <line x1="82" y1="112" x2="160" y2="112" stroke="#111" stroke-width="4"/>
+  <line x1="82" y1="138" x2="150" y2="138" stroke="#111" stroke-width="4"/>
+  <path d="M226 177 C236 118, 292 139, 300 83" fill="none" stroke="#111" stroke-width="8" stroke-linecap="square"/>
+  <circle cx="300" cy="83" r="12" fill="#111"/>
+  <text x="218" y="63" font-family="Roboto Mono, Courier New, monospace" font-size="22" font-weight="700" fill="#111">GenNote</text>
+  <text x="218" y="210" font-family="Roboto Mono, Courier New, monospace" font-size="14" fill="#444">PDF + local STT</text>
+</svg>

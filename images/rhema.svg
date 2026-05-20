@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="title desc">
+  <title id="title">RHEMA placeholder</title>
+  <desc id="desc">Retro black and white placeholder image for the RHEMA publication.</desc>
+  <rect width="400" height="260" fill="#f7f7f7"/>
+  <rect x="18" y="18" width="364" height="224" fill="none" stroke="#111" stroke-width="4"/>
+  <path d="M62 184 C105 120, 142 178, 180 126 S265 56, 336 98" fill="none" stroke="#111" stroke-width="8" stroke-linecap="square"/>
+  <circle cx="112" cy="153" r="16" fill="#111"/>
+  <circle cx="188" cy="119" r="16" fill="#111"/>
+  <circle cx="289" cy="72" r="16" fill="#111"/>
+  <text x="44" y="66" font-family="Roboto Mono, Courier New, monospace" font-size="22" font-weight="700" fill="#111">RHEMA</text>
+  <text x="44" y="96" font-family="Roboto Mono, Courier New, monospace" font-size="14" fill="#444">action-grounded</text>
+  <text x="44" y="116" font-family="Roboto Mono, Courier New, monospace" font-size="14" fill="#444">VLA explanation</text>
+  <text x="244" y="211" font-family="Roboto Mono, Courier New, monospace" font-size="18" font-weight="700" fill="#111">y_act</text>
+</svg>

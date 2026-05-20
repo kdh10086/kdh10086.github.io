@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dohyeong Kim</title>
+
+    <meta name="author" content="Dohyeong Kim">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dohyeong Kim - Computer Science student interested in Physical AI, VLA, explainability, and local inference.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAElBMVEUAAAAAAAD///8AAAB3d3dTmZk6X52SAAAAAXRSTlMAQObYZgAAAFVJREFUKJFjYCANNDY2NmMwYHBjY2CwYXBwcGawgLCDEYQBpBkYmDkYIoA0MwMDM4M4gwGIZnRgYGYQZ2CAiszZDMwM7gwMEBn27AwmEGl2BgaQzWgAAL38D/bS+x2TAAAAAElFTkSuQmCC'), auto;
+      }
+
+      a, .hoverZoomLink {
+        cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAAAAAAD///8AAAB3d3dTmZk6X52SAAAAH3RSTlMAQObYZgAAAAFvC5ErAAAAgUlEQVQoz2NgIA00NjY2YwhgcGNjYLBhYHBwZLCAsIMRhAGkGRiYORgicAAoAmIzMDCIMxiAaEYHBmYGcQYGCEVwZ2CAyLBnZzCBSLMzMIDUQAQYHBkYINLszgwM4gwMEBl27AwmEGl2BgaQzWwMDBBpdgYGkM1sDAwQaXYGBpDNAAC/jQ/20o4iRwAAAABJRU5ErkJggg==') 14 0, pointer;
+      }
+
+      body {
+        background-color: #fcfcfc;
+        color: #111;
+        font-family: 'Roboto Mono', 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        background-color: #111;
+        color: #fff;
+        border-bottom: 1px solid #111;
+        text-decoration: none;
+      }
+
+      h1, h2, h3, strong, b {
+        font-weight: 700;
+        color: #000;
+      }
+
+      p {
+        margin: 0 0 16px;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 18px;
+      }
+
+      .cursor {
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        background-color: #000;
+        animation: blink 1s step-end infinite;
+        vertical-align: text-bottom;
+        margin-left: 5px;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      img {
+        border: 2px solid #111;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.02);
+      }
+
+      .profile-photo {
+        width: 100%;
+        max-width: 220px;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 0;
+        box-shadow: 5px 5px 0px #ccc;
+      }
+
+      .heading {
+        border-bottom: 2px solid #111;
+        padding-bottom: 5px;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .desc {
+        font-size: 13px;
+        color: #444;
+      }
+
+      .papertitle {
+        font-weight: 700;
+        font-size: 15px;
+      }
+
+      .date {
+        float: right;
+      }
+
+      .item-spacer {
+        margin-top: 20px;
+      }
+
+      .main-table {
+        width: 100%;
+        max-width: 840px;
+        border: 0;
+        border-spacing: 0;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .section-table {
+        width: 100%;
+        border: 0;
+        border-spacing: 0;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .top-table {
+        margin-top: 40px;
+      }
+
+      @media (max-width: 700px) {
+        body {
+          font-size: 13px;
+        }
+
+        .top-table tr,
+        .paper-row {
+          display: block;
+        }
+
+        .top-table td,
+        .paper-row td {
+          display: block;
+          width: auto !important;
+          max-width: none !important;
+          padding: 16px 20px !important;
+        }
+
+        .top-table td:last-child {
+          text-align: left;
+          padding-top: 0 !important;
+        }
+
+        .profile-photo {
+          max-width: 190px;
+        }
+
+        .date {
+          display: block;
+          float: none;
+          margin-top: 2px;
+          color: #444;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class="main-table"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+          <table class="section-table top-table"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:65%;vertical-align:middle">
+                <p class="name">Dohyeong Kim</p><div class="cursor"></div>
+                <p>
+                  I am currently a <b>B.S. student in Computer Science</b> at <a href="https://www.konkuk.ac.kr/">Konkuk University</a>.
+                  I am preparing for graduate research around <b>Trustworthy Machine Learning</b>, <b>Physical AI</b>, and <b>VLA models</b>.
+                </p>
+                <p>
+                  My research interests include <b>explainable autonomous driving VLAs</b>, <b>robot learning</b>, and <b>memory-efficient local inference</b>.
+                </p>
+                <p style="margin-top: 20px;">
+                  <a href="#">Email</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/kdh10086">Github</a> &nbsp;/&nbsp;
+                  <a href="#">CV</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/%EB%8F%84%ED%98%95-%EA%B9%80-070988367/">LinkedIn</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:35%;max-width:35%">
+                <img class="profile-photo" alt="profile photo" src="images/profile.jpg">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 class="heading">🎓 Education</h2>
+                <p>
+                  <b><a href="https://www.konkuk.ac.kr/">Konkuk University</a></b>
+                  <span class="date">Mar 2022 - Current</span>
+                  <br>
+                  <i>B.S. in Computer Science and Engineering</i>
+                  <br>
+                  <span class="desc">GPA: 4.11/4.5 &middot; Undergraduate research direction: Trustworthy ML, VLA, Physical AI</span>
+                </p>
+                <p class="item-spacer">
+                  <b>Trustworthy Machine Learning Lab</b>, Konkuk University
+                  <span class="date">Graduate track planned</span>
+                  <br>
+                  <i>Prospective integrated graduate research path</i>
+                  <br>
+                  <span class="desc">Focused on trustworthy AI, VLA/robot AI, explainability, safety, and efficient inference. Details will be updated after official affiliation is finalized.</span>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 class="heading">🌍 Experience</h2>
+                <p>
+                  <b>Team K.A.I</b>, Konkuk University
+                  <span class="date">May 2025 - Nov 2025</span>
+                  <br>
+                  <i>Perception / Autonomous Driving</i>
+                  <br>
+                  <span class="desc">Built ROS2 perception pipelines for competition vehicles, including YOLO traffic-light detection, ros2bag-based dataset construction, camera-LiDAR fusion, obstacle-distance estimation, and control-facing topic/service interfaces.</span>
+                </p>
+                <p class="item-spacer">
+                  <b>Physical AI Hackathon</b>
+                  <span class="date">Feb 2026</span>
+                  <br>
+                  <i>Dual-arm robot VLA pipeline</i>
+                  <br>
+                  <span class="desc">Worked with SO-100/SO-101 dual-arm robots, local smolVLA inference, real-world data collection, calibration, and action-sequence execution. Fine Folding track: 2nd prize.</span>
+                </p>
+                <p class="item-spacer">
+                  <b>KIST / Intelligent Interaction Research</b>
+                  <span class="date">Placeholder</span>
+                  <br>
+                  <i>Field practice / research plan</i>
+                  <br>
+                  <span class="desc">Placeholder for confirmed internship or research affiliation. Current materials describe interest in long-term agent systems, life-data structuring, RAG/LangGraph, and KIST-linked graduate research planning.</span>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 class="heading">📄 Publications</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table" style="border-spacing:0px 10px;"><tbody>
+            <tr class="paper-row">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/rhema.svg" width="200" alt="RHEMA visual placeholder">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Look Where You Drive: Action-Based Visual Explanation for Autonomous Driving VLAs</span>
+                <br>
+                <b>Dohyeong Kim</b>, et al.
+                <br>
+                <a href="#">ECCV 2026 Submission</a>
+                <br>
+                <div class="desc" style="margin-top:5px;">
+                  Proposed RHEMA, a post-hoc action-grounded visual explanation method for autonomous driving VLAs. Contributions include the y_act problem formulation, SimLingo/ReCogDrive adaptation, dual-source fusion, ablation design, and rebuttal-oriented result analysis.
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 class="heading">🧪 Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table" style="border-spacing:0px 10px;"><tbody>
+            <tr class="paper-row">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/yolo-dataset-studio.svg" width="200" alt="YOLO Dataset Studio placeholder">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">YOLO Dataset Studio</span>
+                <br>
+                <a href="https://github.com/kdh10086/YOLO_Dataset_Studio">Github</a>
+                <br>
+                <div class="desc" style="margin-top:5px;">
+                  A CLI workspace for custom YOLO dataset bootstrapping: ROS2 bag/video ingestion, OpenCV GUI labeling, teacher/student training, auto-labeling, split/merge/sampling, and active-learning candidate selection. Used in autonomous driving competitions.
+                </div>
+              </td>
+            </tr>
+
+            <tr class="paper-row">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/gennote.svg" width="200" alt="GenNote placeholder">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">GenNote</span>
+                <br>
+                <a href="#">Project link placeholder</a>
+                <br>
+                <div class="desc" style="margin-top:5px;">
+                  A local-first iPad lecture note app that connects PDF context, handwriting, recording, 30-second transcription windows, carryover, local Whisper STT, and a Gemma-based correction agent for on-device lecture transcription.
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 class="heading">✨ Awards</h2>
+                <p>
+                  <b>Kookmin University Autonomous Driving Contest</b>
+                  <span class="date">Aug 2025</span>
+                  <br>
+                  <i>1st Prize</i>
+                  <br>
+                  <span class="desc">Team K.A.I perception contribution: competition-specific YOLO dataset construction, ROS2 detection interface, center-lane tracing, camera-LiDAR fusion, DBSCAN obstacle-distance estimation, E-Stop, and ultrasonic-based overtaking logic.</span>
+                </p>
+                <br>
+                <p>
+                  <b>2025 College Student Creative Mobility Competition</b>
+                  <span class="date">Nov 2025</span>
+                  <br>
+                  <i>Excellence Award in Creative Technology &middot; Special Award in Autonomous Driving Performance</i>
+                  <br>
+                  <span class="desc">Built a three-class traffic-light dataset and lightweight YOLO pipeline for real competition lighting/camera conditions, then passed green-light decisions to control code through ROS2 services/topics.</span>
+                </p>
+                <br>
+                <p>
+                  <b>1st Physical AI Hackathon</b>
+                  <span class="date">Feb 2026</span>
+                  <br>
+                  <i>2nd Prize, Fine Folding Track</i>
+                  <br>
+                  <span class="desc">Connected local smolVLA inference with real dual-arm manipulation through data collection, calibration, and action execution.</span>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="section-table"><tbody>
+            <tr>
+              <td style="padding:20px;text-align:right;">
+                <p style="font-size:small;">
+                  <br>
+                  Design inspired by <a href="https://github.com/jonbarron/website">Jon Barron</a>.
+                  <br>
+                  Styled after <a href="https://dubae.github.io/">Duhoe Kim</a>'s retro academic homepage.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
